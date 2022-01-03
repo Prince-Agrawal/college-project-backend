@@ -9,18 +9,18 @@ const uploadBookDrive = require("../../../upload_book");
 const SoldBookDetail = require("../../../models/Seller/sell");
 const parseMultipartData = require("../util/helper");
 
-let storage = mult.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, getAppPath());
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.fieldname + "-" + Date.now());
-  },
-});
+// let storage = mult.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, getAppPath());
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, file.fieldname + "-" + Date.now());
+//   },
+// });
 
-let load = mult({
-  storage: storage,
-});
+// let load = mult({
+//   storage: storage,
+// });
 
 router.post("/sell", async (req, res, next) => {
   // console.log('jfhkfjhdkfhdkhjfdgkjfdkjfdhfkjhdkjfhkfhfdkjhdkjfdhk');
@@ -40,9 +40,9 @@ router.post("/sell", async (req, res, next) => {
       console.log("sdfadsadasdasdsad");
 
       // image_name_value=req.file.filename
-      const file_id = await uploadBookDrive(files);
+      // const file_id = await uploadBookDrive(files);
       // image_name = await getBookLink(file_id);
-      image_name = file_id;
+      image_name = "file_id";
       console.log("ffffffffffff", image_name);
     }
     // // console.log(req.file)
