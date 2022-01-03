@@ -29,7 +29,7 @@ router.post("/sell", async (req, res, next) => {
 
     console.log(fields);
     // const file = req.file;
-    console.log("gggggggg");
+    // console.log("gggggggg");
     let image_name;
     if (Object.keys(files).length === 0) {
       console.log("ffffffffff");
