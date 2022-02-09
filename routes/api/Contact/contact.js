@@ -4,7 +4,7 @@ const smtpTransport = require("../util/mailConfiguration");
 
 router.post("/", async (req, res, next) => {
   try {
-    console.log("bfhgfhg")
+    console.log("bfhgfhg", process.env.LIBROBIN_HELP_MAIL_PASS)
     const mailDetails = {
       from: "librobinhelp@gmail.com",
       to: "utkarshagrawal2022@gmail.com",

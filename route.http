@@ -1,0 +1,11 @@
+POST http://localhost:3000/contactUs HTTP/1.1
+Content-Type: application/json
+
+{
+    "your_name": "Prince",
+    "email": "utkarshagrawal2022@gmail.com",
+    "phone_no": "7340234190",
+    "message": "Hii"
+}
+
+###
