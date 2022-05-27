@@ -5,8 +5,6 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 
-
-
 //For importing api
 const BookDetailRoute = require("./routes/api/BookStore/live_book");
 const BookSearchRoute = require("./routes/api/BookStore/search_book");
